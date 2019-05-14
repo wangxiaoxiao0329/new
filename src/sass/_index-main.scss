@@ -1,0 +1,427 @@
+@charset "utf-8";
+$potive:relative;
+$width:100%;
+$height:100%;
+$disinline:inline-block;
+$disblock:block;
+$poab:absolute;
+@font-face {
+    font-family: iconfont;
+    src: url(fonts/font_tr83tta2jkc8r529.woff) format('woff')
+}
+
+// 主体结构上面的子导航
+.main {
+    .i-icon {
+        background: url(../img/i_icon3.png) no-repeat;
+    }
+    .sub-nav {
+        height: 30px;
+        .fixed {
+            position: $potive;
+            background: #fff;
+            .wrapper-nav {
+                width: 1080px;
+                margin: 0 auto;
+                position: $potive;
+                ul {
+                    line-height: 30px;
+                    li {
+                        position: $potive;
+                        vertical-align: top;
+                        display: $disinline;
+                        a {
+                            margin: 0 12px 0 0;
+                            padding: 0 10px;
+                            color: #999;
+                            display: $disblock;
+                            height: 27px;
+                            font-size: 12px;
+                        }
+                    }
+                    .tomorrow {
+                        position: $poab;
+                        right: 0;
+                        font-size: 13px;
+                        padding: 0 28px;
+                        color: #ff506b;
+                        a {
+                            color: #ff506b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 轮播图
+    .banner {
+        width: 100%;
+        position: $potive;
+        height: 320px;
+        margin-top: -1px;
+        .banner-img {
+            width: 100%;
+            height: 320px;
+            position: $potive;
+            overflow: hidden;
+            .repair-banner {
+                position: $poab;
+                text-align: center;
+                background-color: #fd6c7d;
+            }
+        }
+        .banner-tag {
+            position: $poab;
+            padding: 0;
+            top: 1px;
+            left: 50%;
+            font-size: 0;
+            width: 250px;
+            height: 318px;
+            margin-left: 290px;
+            background: #fff;
+            opacity: .95;
+            overflow: hidden;
+            li {
+                position: $potive;
+                cursor: pointer;
+                display: $disinline;
+                vertical-align: top;
+                width: 125px;
+                height: 160px;
+                a {
+                    display: $disblock;
+                    height: 156px;
+                    width: 122px;
+                    border: 1px solid #ddd;
+                    background: #fff;
+                    padding: 1px;
+                    img {
+                        margin: 26px 15px 2px 15px;
+                    }
+                    p {
+                        text-align: center;
+                        font-size: 13px;
+                        color: #7f7f7f;
+                        width: 94px;
+                        overflow: hidden;
+                        margin: 0 15px;
+                        height: 20px;
+                    }
+                    .icon-price {
+                        display: $disinline;
+                        background-position: -53px -33px;
+                        position: $poab;
+                        left: 70px;
+                        top: 12px;
+                        width: 36px;
+                        text-align: center;
+                        font-size: 12px;
+                        color: #fff;
+                        height: 36px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+    }
+    // 今日特卖
+    .main-wrapper {
+        width: 1080px;
+        margin: 0 auto;
+        position: $potive;
+        .today-sale {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            .special-sale {
+                color: #666;
+                font-size: 20px;
+                .day {
+                    font-weight: 700;
+                }
+                .d-dot {
+                    border: 1px solid #666;
+                    width: 2px;
+                    height: 2px;
+                    display: $disinline;
+                    background: #666;
+                    vertical-align: middle;
+                    margin: 0 5px 0 2px;
+                    overflow: hidden;
+                }
+            }
+        }
+        // 主体购物列表
+        .main-cont-right {
+            position: $potive;
+            min-height: 2100px;
+            // 右侧热卖排行榜tab切换
+            .tab {
+                position: $poab;
+                left: 830px;
+                top: 0;
+                z-index: 9;
+                .hot-sale {
+                    margin-top: -30px;
+                    .hot {
+                        background-position: -180px 2px;
+                        padding-left: 25px;
+                        color: #666;
+                    }
+                    .hot-cont {
+                        background: #fff;
+                        width: 248px;
+                        border: 1px solid #e7e7e7;
+                        overflow: hidden;
+                        margin-top: 5px;
+                        ul {
+                            height: 31px;
+                            overflow: hidden;
+                            font-size: 13px;
+                            li {
+                                float: left;
+                                width: 61px;
+                                height: 30px;
+                                line-height: 30px;
+                                border-right: 1px solid #dbdbdb;
+                                text-align: center;
+                                border-bottom: 1px solid #dbdbdb;
+                                color: #959595;
+                                cursor: pointer;
+                                background: #f9f9f9;
+                            }
+                            .active {
+                                background: #FFF;
+                                color: #787878;
+                                height: 31px;
+                            }
+                        }
+                        // tab切换的内容
+                        .item {
+                            a {
+                                display: $disblock;
+                                border-bottom: 1px solid #f1f1f1;
+                                width: 228px;
+                                height: 70px;
+                                padding: 10px;
+                                color: #3e3e3e;
+                                font-size: 12px;
+                                img {
+                                    float: left;
+                                    width: 70px;
+                                    height: 70px;
+                                }
+                                .item-info {
+                                    width: 143px;
+                                    height: 57px;
+                                    margin-left: 10px;
+                                    float: left;
+                                    .hot-title {
+                                        width: 143px;
+                                        height: 36px;
+                                        line-height: 18px;
+                                        overflow: hidden;
+                                    }
+                                    .h-price {
+                                        .price-num {
+                                            color: #ff5482;
+                                        }
+                                        .price-num-n {
+                                            font-weight: 700;
+                                            font-size: 14px;
+                                            line-height: 24px;
+                                        }
+                                        .price-del {
+                                            text-decoration: line-through;
+                                            color: #a5a5a5;
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // 右侧购物列表
+            .shopping {
+                position: $potive;
+                margin-bottom: 40px;
+                width: 1110px;
+                ul {
+                    li {
+                        border: 0;
+                        background: 0 0;
+                        box-shadow: none;
+                        transition: none;
+                        padding: 0;
+                        width: 257px;
+                        display: $disinline;
+                        margin-right: 22px;
+                        margin-bottom: 21px;
+                        overflow: hidden;
+                        .shopping-shows {
+                            .show-wrap {
+                                margin-top: 0;
+                                position: $potive;
+                                overflow: hidden;
+                                .title {
+                                    margin: 12px 14px;
+                                    font-size: 12px;
+                                    color: #666;
+                                    text-align: left;
+                                    line-height: 14px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                .price-info {
+                                    margin: 12px 14px 16px;
+                                    width: auto;
+                                    height: 28px;
+                                    line-height: 28px;
+                                    text-align: left;
+                                    position: $potive;
+                                    .cur-price {
+                                        font-weight: 700;
+                                        display: $disinline;
+                                        .currency {
+                                            font-size: 20px;
+                                            margin-right: 1px;
+                                            color: #ff4965;
+                                        }
+                                        .price-num {
+                                            font-size: 24px;
+                                            letter-spacing: 1px;
+                                            color: #ff4965;
+                                        }
+                                        .price-little {
+                                            font-size: 12px;
+                                            color: #ff4965;
+                                        }
+                                    }
+                                    .del-price {
+                                        font-size: 14px;
+                                        color: #999;
+                                        line-height: 14px;
+                                        letter-spacing: 1px;
+                                        margin-left: 8px;
+                                        text-decoration: line-through;
+                                        display: $disinline;
+                                    }
+                                    .discount-desc {
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        color: #999;
+                                        text-align: right;
+                                        position: absolute;
+                                        bottom: 3px;
+                                        right: 0;
+                                        display: $disinline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // 更多精彩
+            .splendid {
+                width: 1100px;
+                height: 60px;
+                font-size: 14px;
+                margin-top: -40px;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 60px;
+                background-color: rgb(247, 235, 235);
+                cursor: pointer;
+                font-weight: 700;
+                .iconfont {
+                    padding-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+// 主体下面的固定背景图
+.bottom-bg {
+    position: $potive;
+    height: 148px;
+    width: $width;
+    overflow: hidden;
+    margin-top: 50px;
+    img {
+        position: $poab;
+        left: 50%;
+        margin-left: -960px;
+        background-position: center;
+    }
+}
+
+//footer上面的服务条
+.service {
+    border-top: 1px solid #ddd;
+    background: #f1f1f1;
+    padding: 10px 0;
+    min-width: 1000px;
+    .s-wrapper {
+        width: 1080px;
+        margin: 0 auto;
+        position: $potive;
+        .center-box {
+            text-align: center;
+            .greenhand {
+                border-bottom: 1px solid #e9e1e8;
+                height: 150px;
+                .green-hands {
+                    border-left: none;
+                }
+                dl {
+                    border-right: 1px solid #e9e1e8;
+                    float: left;
+                    height: 120px;
+                    margin: 15px 0;
+                    padding: 0 0 0 15px;
+                    width: 115px;
+                    text-align: left;
+                    dt {
+                        color: #777;
+                        font-size: 14px;
+                    }
+                    dd {
+                        margin: 0 0 0 3px;
+                        font-size: 12px;
+                        a {
+                            display: $disblock;
+                            height: 22px;
+                            line-height: 22px;
+                            overflow: hidden;
+                            padding-left: 9px;
+                            color: #888;
+                        }
+                    }
+                }
+                .special-offers {
+                    background: url(../img/sns_icon3.png) no-repeat;
+                    width: 95px;
+                    padding: 10px 0 0 105px;
+                    height: 110px;
+                    border-right: none;
+                    .pink {
+                        color: #ff5482;
+                        .s-known {
+                            color: #999;
+                            padding-top: 5px;
+                            display: $disinline;
+                        }
+                    }
+                }
+            }
+            .pic-bottom {
+                height: 70px;
+                border-top: 1px solid #fdfdfd;
+            }
+        }
+    }
+}

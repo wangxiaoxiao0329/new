@@ -1,0 +1,452 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "nc_iconfont";
+  src: url(../fonts/font_1465353706_4784257.woff) format("woff"); }
+.head {
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 45px;
+  overflow: hidden; }
+  .head .head-logo {
+    float: left; }
+    .head .head-logo a {
+      display: block;
+      background: url(https://h0.hucdn.com/open201912/113f25eac3906f0d_114x60.jpg) no-repeat 0 0 #fff;
+      height: 60px;
+      position: relative;
+      width: 114px; }
+  .head .head-pic a {
+    float: right;
+    display: block;
+    background: url(../img/upload_d96e41a66c898b1e6afef9efbfbdc1be_361x54.png) no-repeat 0 3px #fff;
+    height: 50px;
+    position: relative;
+    width: 360px; }
+
+.login-main {
+  overflow: hidden;
+  padding: 110px 0;
+  width: 1080px;
+  margin: 0 auto; }
+  .login-main .login-picture {
+    width: 500px;
+    height: 354px;
+    background: url(../img/0972a068e6793844_500x354.png) no-repeat;
+    position: relative;
+    left: 50px;
+    display: inline-block; }
+  .login-main .login-sign {
+    color: #666;
+    width: 400px;
+    border: 1px solid #ececec;
+    border-top: 2px solid #ff4965;
+    float: right;
+    position: relative; }
+    .login-main .login-sign form {
+      padding: 50px 35px; }
+      .login-main .login-sign form .lo-label {
+        display: block;
+        border: 1px solid #e6e6e6;
+        border-radius: 2px;
+        padding-left: 30px;
+        position: relative; }
+        .login-main .login-sign form .lo-label .fixedpic {
+          position: absolute;
+          left: 8px;
+          top: 8px;
+          border-right: 1px solid #e6e6e6;
+          padding-right: 7px;
+          background-image: url(https://b0.hucdn.com/party/default/upload_c8f6a2dfe4ca17b3941740e88373a88e_14x93.jpg);
+          background-repeat: no-repeat;
+          width: 14px;
+          height: 14px;
+          line-height: 30px;
+          color: #fff;
+          text-align: center; }
+        .login-main .login-sign form .lo-label .input {
+          height: 30px;
+          font-size: 12px;
+          width: 278px;
+          color: #666;
+          line-height: 30px;
+          border: 0;
+          padding: 0 10px;
+          background: 0 0;
+          position: relative; }
+      .login-main .login-sign form .lo-title {
+        font-size: 14px;
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 30px; }
+        .login-main .login-sign form .lo-title .lo-not {
+          font-size: 12px;
+          font-weight: 400;
+          color: #666;
+          float: right; }
+          .login-main .login-sign form .lo-title .lo-not .lo-register {
+            color: #ff4965; }
+      .login-main .login-sign form .lo-email {
+        margin-top: 15px; }
+        .login-main .login-sign form .lo-email .lo-label {
+          height: 32px; }
+          .login-main .login-sign form .lo-email .lo-label .em-pic {
+            background-position: 0 0; }
+      .login-main .login-sign form .lo-slide {
+        margin-top: 15px; }
+        .login-main .login-sign form .lo-slide .s-wrapper {
+          margin-top: 15px; }
+          .login-main .login-sign form .lo-slide .s-wrapper .nc-wrapper {
+            width: 330px; }
+            .login-main .login-sign form .lo-slide .s-wrapper .nc-wrapper .nc-sbox {
+              width: auto;
+              height: 34px;
+              background: #e8e8e8;
+              position: relative;
+              margin: 0;
+              padding: 0; }
+              .login-main .login-sign form .lo-slide .s-wrapper .nc-wrapper .nc-sbox .nc_iconfont {
+                font-family: "nc_iconfont";
+                color: #ff3f08;
+                font-size: 16px;
+                font-style: normal; }
+              .login-main .login-sign form .lo-slide .s-wrapper .nc-wrapper .nc-sbox .btn_slide {
+                color: #737383;
+                background-image: none; }
+              .login-main .login-sign form .lo-slide .s-wrapper .nc-wrapper .nc-sbox span {
+                text-align: center;
+                width: 40px;
+                height: 32px;
+                line-height: 32px;
+                border: 1px solid #ccc;
+                position: absolute;
+                left: 0;
+                cursor: move;
+                background: #fff;
+                z-index: 100; }
+              .login-main .login-sign form .lo-slide .s-wrapper .nc-wrapper .nc-sbox .nc-text {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                position: absolute;
+                background: transparent;
+                color: #9c9c9c;
+                line-height: 34px;
+                cursor: pointer; }
+                .login-main .login-sign form .lo-slide .s-wrapper .nc-wrapper .nc-sbox .nc-text .nc-text-span {
+                  display: inline-block;
+                  width: 100%;
+                  border: none;
+                  position: static;
+                  background: none;
+                  font-size: 12px; }
+      .login-main .login-sign form .lo-short {
+        margin-top: 15px; }
+        .login-main .login-sign form .lo-short .clearfix .lo-label {
+          width: 195px;
+          float: left; }
+          .login-main .login-sign form .lo-short .clearfix .lo-label .hs-pic {
+            background-position: 0 -33px; }
+          .login-main .login-sign form .lo-short .clearfix .lo-label .em-input {
+            width: 175px; }
+        .login-main .login-sign form .lo-short .clearfix .btn-bbnormal {
+          padding: 0 13px;
+          height: 30px;
+          line-height: 30px;
+          color: #ff4965;
+          background: #fff;
+          border: 1px solid #ff4965;
+          border-radius: 3px;
+          display: inline-block;
+          font-size: 10px;
+          margin-left: 15px; }
+      .login-main .login-sign form .lo-password {
+        margin-top: 15px; }
+        .login-main .login-sign form .lo-password .lo-label {
+          height: 32px; }
+          .login-main .login-sign form .lo-password .lo-label .pass-pic {
+            background-position: 0 -47px; }
+          .login-main .login-sign form .lo-password .lo-label .passlock {
+            cursor: pointer;
+            top: 10px;
+            right: 8px;
+            background-position: 0 -66px;
+            position: absolute;
+            background-image: url(https://b0.hucdn.com/party/default/upload_c8f6a2dfe4ca17b3941740e88373a88e_14x93.jpg);
+            background-repeat: no-repeat;
+            width: 14px;
+            height: 14px;
+            line-height: 30px;
+            color: #fff;
+            text-align: center; }
+      .login-main .login-sign form .lo-btn {
+        margin-top: 15px; }
+        .login-main .login-sign form .lo-btn input {
+          display: block;
+          border: 0;
+          width: 330px !important;
+          color: #fff;
+          background: #ff4965;
+          height: 32px;
+          border-radius: 3px;
+          text-align: center;
+          font-size: 14px; }
+      .login-main .login-sign form .lo-text {
+        margin-top: 15px;
+        font-size: 10px;
+        line-height: 20px; }
+        .login-main .login-sign form .lo-text a {
+          color: #ff4965; }
+      .login-main .login-sign form .lo-spic {
+        overflow: hidden;
+        height: 24px;
+        line-height: 24px;
+        margin-top: 15px; }
+        .login-main .login-sign form .lo-spic span {
+          float: left;
+          font-size: 10px; }
+        .login-main .login-sign form .lo-spic .bg-img {
+          background-image: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png);
+          background-repeat: no-repeat;
+          width: 25px;
+          height: 24px;
+          margin: 0 4px; }
+        .login-main .login-sign form .lo-spic .lo-spic-qq {
+          display: inline-block;
+          background-position: 1px 0; }
+        .login-main .login-sign form .lo-spic .lo-spic-qq:hover {
+          background-position: -28px 0; }
+        .login-main .login-sign form .lo-spic .lo-spic-wx {
+          display: inline-block;
+          background-position: -119px 0;
+          width: 26px; }
+        .login-main .login-sign form .lo-spic .lo-spic-wx:hover {
+          background-position: -149px 0; }
+
+#footer {
+  color: #666;
+  text-align: center; }
+  #footer .footer-nav {
+    border-top: 3px solid #ff5482;
+    background: #555;
+    padding: 10px 0;
+    color: #ddd; }
+    #footer .footer-nav a {
+      color: #ddd;
+      margin: 0 10px;
+      font-size: 12px; }
+    #footer .footer-nav .hidden {
+      display: none; }
+  #footer .footer-content {
+    background: #fff;
+    padding: 20px 0 40px;
+    color: #999; }
+    #footer .footer-content .wrapper {
+      width: 1080px;
+      margin: 0 auto;
+      position: relative; }
+      #footer .footer-content .wrapper p {
+        font-size: 12px;
+        margin-bottom: 15px; }
+        #footer .footer-content .wrapper p a {
+          color: #999; }
+          #footer .footer-content .wrapper p a img {
+            vertical-align: middle; }
+      #footer .footer-content .wrapper .foot-img {
+        margin-top: 20px; }
+        #footer .footer-content .wrapper .foot-img a img {
+          width: 90px;
+          height: 32px; }
+
+.shopping-cart {
+  position: fixed;
+  bottom: 160px;
+  left: 50%;
+  z-index: 999;
+  width: 70px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  opacity: .85;
+  margin-left: 550px; }
+  .shopping-cart .active {
+    background: #ff4965; }
+    .shopping-cart .active .iconfont {
+      color: #fff !important; }
+  .shopping-cart #sidebar-cart {
+    position: relative;
+    width: 70px;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: center;
+    color: #ff647c;
+    border-top: 1px solid #e6e6e6;
+    height: 27px; }
+    .shopping-cart #sidebar-cart .cart-wrap {
+      position: absolute;
+      width: 60px;
+      height: 43px; }
+    .shopping-cart #sidebar-cart .car-bar {
+      width: 350px;
+      position: absolute;
+      right: 0;
+      bottom: -100px;
+      left: -350px;
+      display: none; }
+      .shopping-cart #sidebar-cart .car-bar .car-bar-box {
+        background: transparent;
+        border: 1px solid #9b5482;
+        width: 350px;
+        text-align: left;
+        color: #000;
+        z-index: 30;
+        cursor: default;
+        position: relative; }
+        .shopping-cart #sidebar-cart .car-bar .car-bar-box .car-bar-title {
+          padding: 2px 15px;
+          border-bottom: 1px solid #999;
+          background: #fff9fb;
+          font-size: 13px;
+          text-align: center;
+          color: #9b5482; }
+          .shopping-cart #sidebar-cart .car-bar .car-bar-box .car-bar-title .iconfont {
+            font-size: 18px; }
+        .shopping-cart #sidebar-cart .car-bar .car-bar-box .car-list {
+          background: white;
+          overflow-y: hidden; }
+          .shopping-cart #sidebar-cart .car-bar .car-bar-box .car-list li {
+            font-size: 16px;
+            color: #99918c;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border-bottom: none; }
+            .shopping-cart #sidebar-cart .car-bar .car-bar-box .car-list li .select {
+              width: 100%;
+              display: block;
+              transition: all 0.2s ease 0s;
+              position: absolute;
+              left: 0px;
+              top: 80px;
+              margin: 0px;
+              padding: 0px; }
+            .shopping-cart #sidebar-cart .car-bar .car-bar-box .car-list li .shoppshow {
+              width: 100%;
+              display: block;
+              transition: all 0.2s ease 0s;
+              position: absolute;
+              left: -100%;
+              top: 80px; }
+        .shopping-cart #sidebar-cart .car-bar .car-bar-box .subtotal {
+          height: 47px;
+          border-top: 1px solid #e3e3e3;
+          background: #fff9fb; }
+          .shopping-cart #sidebar-cart .car-bar .car-bar-box .subtotal .subtotal-n {
+            font-size: 13px;
+            color: #666666;
+            padding: 10px 15px;
+            position: absolute; }
+            .shopping-cart #sidebar-cart .car-bar .car-bar-box .subtotal .subtotal-n span {
+              color: #e53363;
+              font-size: 18px; }
+          .shopping-cart #sidebar-cart .car-bar .car-bar-box .subtotal .settlement {
+            background: #ff5482;
+            padding: 4px 12px;
+            font-size: 13px;
+            color: white;
+            border-radius: 4px;
+            border-width: 1px 1px 2px;
+            border-style: solid;
+            border-color: #ff3c70 #ff3c70 #e53363;
+            border-image: initial;
+            float: right;
+            margin-right: 15px;
+            margin-top: 6px;
+            height: 24px;
+            width: auto;
+            line-height: 24px; }
+            .shopping-cart #sidebar-cart .car-bar .car-bar-box .subtotal .settlement a {
+              color: #fff; }
+              .shopping-cart #sidebar-cart .car-bar .car-bar-box .subtotal .settlement a .iconfont {
+                font-size: 18px; }
+    .shopping-cart #sidebar-cart .zero {
+      position: absolute;
+      top: -2px;
+      right: 5px;
+      color: #7dca00; }
+      .shopping-cart #sidebar-cart .zero em {
+        color: #fff;
+        display: inline-block;
+        font-size: 11px;
+        position: absolute;
+        right: 3px;
+        text-align: center;
+        top: 7px;
+        width: 14px;
+        line-height: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #7dca00;
+        font-style: normal; }
+      .shopping-cart #sidebar-cart .zero .iconfont {
+        font-size: 22px;
+        display: none; }
+  .shopping-cart .phone-app {
+    position: relative;
+    display: block;
+    width: 70px;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: center;
+    color: #ff647c;
+    border-top: 1px solid #e6e6e6;
+    height: 27px; }
+    .shopping-cart .phone-app .phone-x {
+      display: none;
+      position: absolute;
+      left: -185px;
+      top: -62px;
+      width: 160px;
+      padding: 10px;
+      border: 2px solid #ff4965;
+      background: #fff; }
+      .shopping-cart .phone-app .phone-x p {
+        text-align: center;
+        color: #333;
+        line-height: 16px;
+        font-size: 13px;
+        font-family: "微软雅黑"; }
+      .shopping-cart .phone-app .phone-x img {
+        border: 0;
+        margin-top: 10px; }
+  .shopping-cart .customer {
+    display: block;
+    width: 70px;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: center;
+    color: #ff647c;
+    position: relative;
+    height: 27px;
+    border-top: 1px solid #e6e6e6; }
+    .shopping-cart .customer .iconfont {
+      font-size: 18px; }
+    .shopping-cart .customer span {
+      line-height: 26px;
+      display: none; }
+  .shopping-cart .back-top {
+    display: block;
+    width: 70px;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: center;
+    color: #ff647c;
+    border-top: 1px solid #e6e6e6;
+    position: relative;
+    height: 27px; }
+    .shopping-cart .back-top span {
+      line-height: 26px;
+      display: none; }
+
+/*# sourceMappingURL=registor.css.map */

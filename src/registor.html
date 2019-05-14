@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贝贝网-买母婴上贝贝！1亿妈妈信赖的母婴正品特卖商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/registor.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://b0.hucdn.com/img/favicon.ico" media="screen">
+    <style>
+        #username-error {
+            color: #fe4b49;
+            font-size: 12px;
+        }
+        
+        #password-error {
+            color: #fe4b49;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部logo/图片 -->
+    <div class="head">
+        <div class="head-logo">
+            <a href="#" title="买母婴上贝贝"></a>
+        </div>
+        <div class="head-pic">
+            <a href="#" title="贝贝正品保证-全部正品,全场包邮,7天无理由退货-贝贝"></a>
+        </div>
+    </div>
+    <!-- 主体登录注册/左侧大图 -->
+    <div class="login-main">
+        <div class="login-picture"></div>
+        <!-- 右侧登录注册 -->
+        <div class="login-sign">
+            <form action="../php/login/reg.php" method="post" id="form1">
+                <div class="lo-title">
+                    <span class="lo-not">
+                        <span>已有账号？</span>
+                    <a href="login.html" class="lo-register">直接登录</a>
+                    </span>
+                    新用户注册
+                </div>
+                <!-- 手机号码、邮箱 -->
+                <div class="lo-email">
+                    <label class="lo-label">
+                        <span class="em-pic fixedpic"></span>
+                        <input type="text" placeholder="您的手机号 / 邮箱" name="username"  id="username" class="em-input input">
+                        
+                    </label>
+
+
+                </div>
+                <!-- 滑动验证 (nc:内层)-->
+                <div class="lo-slide">
+                    <div class="s-wrapper">
+                        <div class="nc-wrapper">
+                            <div class="nc-sbox">
+
+                                <div class="nc-text">
+                                    <span class="nc-text-span">请按住滑块，拖动到最右边</span>
+                                </div>
+                                <span id="nc_1_n1z" class="nc_iconfont btn_slide"></span>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 短信验证码 -->
+                <div class="lo-short">
+                    <div class="clearfix">
+                        <label class="lo-label">
+                                    <span class="hs-pic fixedpic"></span>
+                                    <input type="text" class="em-input input" value="" name="phonecode" placeholder="短信校验码" tabindex="3" autocomplete="off">
+                                </label>
+                        <a href="javascript:;" class="fr btn-bbnormal J_getPhonecode">获取校验码</a>
+                    </div>
+                </div>
+                <!-- 密码 -->
+                <div class="lo-password">
+                    <label class="lo-label" for="password">
+                        <span class="pass-pic fixedpic"></span>
+                        <input type="password" placeholder="密码，6-16位字母、数字或符号" name="password" id="password" maxlength="16" class="pass input">
+                        <span class="passlock"></span>
+                    </label>
+
+                </div>
+
+
+                <!-- 注册按钮 -->
+                <div class="lo-btn">
+                    <!-- <a href="#" class="a-btn" type="submit" name="submit" id="submit" value="注册">注册</a> -->
+                    <input class="a-btn" type="submit" value="注册" name="submit" />
+                </div>
+                <!-- 注册下的文本 -->
+                <div class="lo-text">
+                    <span>
+                           为保障账户安全，建议密码为6-16位字符，可包含数字、字母和特殊字符。
+                 </span>
+                </div>
+                <!-- 使用协议 -->
+                <div class="lo-text">
+
+                    <span>
+                            注册即接受 <a href="#" target="_blank">《贝贝使用协议》</a>和<a href="#" target="_blank">《社区使用协议》</a>
+                        </span>
+                </div>
+                <!-- 快捷登录 -->
+                <div class="lo-spic">
+                    <span>快捷登录方式：</span>
+                    <a title="QQ账号登录" href="#" class="lo-spic-qq bg-img"></a>
+                    <a title="微信账号登录" href="#" class="lo-spic-wx bg-img"></a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div class="footer"></div>
+    <script src="../src/script/js/jquery.js"></script>
+    <script src="../src/script/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $('.footer').load('footer.html');
+    </script>
+    <script src="../src/script/js/registor.js"></script>
+</body>
+
+</html>

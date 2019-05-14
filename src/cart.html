@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贝贝网-有家有贝贝！1亿妈妈信赖的母婴正品特卖商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://b0.hucdn.com/img/favicon.ico" media="screen">
+</head>
+
+<body>
+    <!-- 头部警告标语 -->
+    <div class="warning"></div>
+    <!-- 头部 -->
+    <div id="head">
+        <div class="head-wrapper">
+            <div class="logo">
+                <img src="https://h0.hucdn.com/open201912/113f25eac3906f0d_114x60.jpg">
+                <a class="logo-a" href="#" title="返回首页"></a>
+
+                <div class="logo-slogan">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <!-- 购物车 -->
+                <div class="nav-cart" c-rid="01048">
+                    <a class="top-cart" href="#" c-bname="购物车菜单" clog="" c-emit="click" c-et="event" c-etl="" clog-get="true">
+                        <div class="top-cart-icon">
+                            <i class="iconfont">󰅈</i>
+                        </div>
+                        <span>我的购物车 <i class="iconfont">󰅰</i></span>
+                    </a>
+                    <div class="nav-cart-detail hidden view-TopMenuCart" style="">
+                        <div wg-view="main" widget-id="widgetCartBox4172645891557034530338" widget-name="widgetCartBox" style="background: transparent; border: 1px solid rgb(255, 84, 130); width: 340px; text-align: left; color: rgb(0, 0, 0); z-index: 29; cursor: default; position: relative;">
+                            <div wg-view="title" op-value="title"></div>
+                            <ul wg-view="list" op-each="cartInfo" op-each-item="ListItem" style="background: rgb(255, 255, 255); overflow-y: hidden;">
+                                <li class="empty-cart" style="font-size: 16px; color: rgb(153, 145, 140); padding: 80px 0px; text-align: center; position: relative; overflow: hidden; list-style: none; cursor: pointer; border-bottom: none;"><span class="note" style="width: 100%; display: block; transition: all 0.2s ease 0s; position: absolute; left: 0px; top: 80px; margin: 0px; padding: 0px;">赶快去挑选商品吧！</span><span class="shopping" style="width: 100%; display: block; transition: all 0.2s ease 0s; position: absolute; left: -100%; top: 80px;"><i class="iconfont">󰅸</i> 去专场逛逛</span></li>
+                            </ul>
+                            <div wg-view="footer" style="height: 47px; border-top: 1px solid rgb(227, 227, 227); background: rgb(255, 249, 251);">
+                                <div wg-view="footerTotal" style="font-size: 13px; color: rgb(102, 102, 102); padding: 10px 15px; position: absolute;">小计：<span wg-view="footerTotalNum" op-value="totalPrice" style="color: rgb(229, 51, 99); font-size: 18px;">¥0.00</span></div>
+                                <div wg-view="footerBtnBar">
+                                    <a href="#" wg-view="footerSettleBtn" op-value="settleBtnText,settleBtnLink" op-attr="*,href" style="background: rgb(255, 84, 130); padding: 4px 12px; font-size: 13px; color: rgb(255, 255, 255); border-radius: 4px; border-width: 1px 1px 2px; border-style: solid; border-color: rgb(255, 60, 112) rgb(255, 60, 112) rgb(229, 51, 99); border-image: initial; float: right; margin-right: 15px; margin-top: 6px; height: 24px; width: auto; line-height: 24px;"><i class="iconfont">󰅹</i>去购物车结算</a>
+                                </div>
+                            </div>
+                            <div wg-view="footerBg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div id="cart-content">
+        <div id="content" class="wrapper mt-20">
+            <div class="white-bg box-shadow">
+                <!-- 我的购物车 -->
+                <div class="cart-process">
+                    <h1>我的购物车</h1>
+                    <i>&nbsp;</i>
+                </div>
+                <!-- 购物列表 -->
+                <div class="cart-wrap" style="display: block;">
+                    <div class="w">
+                        <div id="bb-cart">
+                            <div class="cartmain">
+                                <div class="cart-thead">
+                                    <div class="cart-col t-checkbox">
+                                        <div class="cart-checkbox">
+                                            <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                        </div>
+                                    </div>
+                                    <div class="cart-col t-goods">商品</div>
+                                    <div class="cart-col t-props"></div>
+                                    <div class="cart-col t-prices">单价(元)</div>
+                                    <div class="cart-col t-quantity">数量</div>
+                                    <div class="cart-col t-sum">小计(元)</div>
+                                    <div class="cart-col t-action">操作</div>
+                                </div>
+                                <div id="cart-list">
+                                    <div class="cart-item-list">
+                                        <div class="cart-tbody">
+                                            <!-- <div class="shop">
+                                                <div class="cart-checkbox">
+                                                    <input type="checkbox" checked="" name="" id="" value="" />
+                                                </div>
+                                                <span class="shop-info">
+                                                        <a href=""></a>
+                                                    </span>
+                                                <div class="shop-ex">
+                                                    购满￥99.00 已免运费
+                                                    <span class="tips-icon" data-tips="部分超重超大商品运费单独收取，不在本功能范围内，准确运费以结算页为准"></span>
+                                                </div>
+                                            </div> -->
+                                            <div class="item-list">
+                                                <div class="item-head">
+                                                    <div class="header-left">
+                                                        <a class="header-left-p1" href="">
+                                                            <span>
+                                                                    换购
+                                                                    <b></b>
+                                                                </span> 活动商品已购满999.00元，可加价换购商品10件>
+                                                        </a>
+                                                        <a class="header-left-p2" href="">换购商品</a>
+                                                        <a href="">去凑单 ></a>
+                                                    </div>
+                                                    <div class="header-price">
+                                                        <b></b>
+                                                    </div>
+                                                </div>
+                                                <div class="goods-item goods-item-sele">
+                                                    <div class="goods-info">
+                                                        <div class="cell b-checkbox">
+                                                            <div class="cart-checkbox">
+                                                                <input type="checkbox" checked="" name="" id="" value="" />
+                                                                <span class="line-circle"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cell b-goods">
+                                                            <div class="goods-name">
+                                                                <div class="goods-pic">
+                                                                    <a href=""><img src="" alt="" /></a>
+                                                                </div>
+                                                                <div class="goods-msg">
+                                                                    <div class="goods-d-info">
+                                                                        <a href="">Apple iMac 27英寸一体机（Core i5 处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+                                                                    </div>
+                                                                    <!-- <div class="goods-ex">
+                                                                        <span class="promise"></span>
+                                                                        <span class="promise">
+                                                                                <i></i><a href=""></a>
+                                                                            </span>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cell b-props">
+                                                            <div class="prop-text">尺码：27英寸Retina 5K 显示屏</div>
+                                                        </div>
+                                                        <div class="cell b-price">
+                                                            <strong>13488.00</strong>.<b>13488.00</b>
+                                                            <!-- <a class="sales-promotion" href="">
+                                                                    促销优惠
+                                                             
+                                                                </a> -->
+                                                            <div class="sales-promotion-dropdown">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cell b-quantity">
+                                                            <div class="quantity-form">
+                                                                <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                                <input type="text" value="1" />
+                                                                <a class="quantity-add" href="javascript:void(0)">+</a>
+                                                            </div>
+                                                            <div class="quantity-text">有货</div>
+                                                        </div>
+                                                        <div class="cell b-sum">
+                                                            <strong>13488.00</strong>
+                                                        </div>
+                                                        <div class="cell b-action">
+                                                            <a href="javascript:void(0)">删除</a><a href="javascript:void(0)">移到我的关注</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cart-floatbar">
+                            <div class="select-all">
+                                <div class="cart-checkbox">
+                                    <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                </div>
+                            </div>
+                            <div class="operation">
+                                <a href="javascript:void(0)">删除选中的商品</a><a href="javascript:void(0)">移到我的关注</a>
+                            </div>
+                            <div class="toolbar-right">
+                                <div class="btn-area">
+                                    <a href=""></a>
+                                </div>
+                                <div class="price-sum">
+                                    <span class="txt">总价（不含运费）：</span>
+                                    <span class="totalprice">￥0.00</span>
+                                    <span class="txt">已节省：</span>
+                                    <span class="totalsave">-￥0.00</span>
+                                </div>
+                                <div class="amount-sum">
+                                    已选择
+                                    <em>0</em> 件商品
+                                    <b></b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-list goods-selected">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer"></div>
+    <script src="script/js/jquery.js"></script>
+    <!-- <script src="script/js/cookie.js"></script>
+    <script src="script/js/cart.js"></script> -->
+
+    <script>
+        var warnLoad = new Promise(function(resolve, reject) {
+            $('.warning').load('header.html', () => {
+                resolve("header加载完成");
+            })
+        })
+
+        var footLoad = new Promise(function(resolve, reject) {
+            $('.footer').load('footer.html', () => {
+                resolve("footer加载完成");
+            })
+        })
+        Promise.all([warnLoad, footLoad]).then(() => {
+                $.getScript("script/js/cookie.js");
+                $.getScript("script/js/cart.js")
+
+            })
+            // $('.warning').load('header.html');]
+            // $('.footer').load('footer.html');
+    </script>
+</body>
+
+</html>

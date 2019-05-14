@@ -1,0 +1,234 @@
+@charset "utf-8";
+$potive:relative;
+$width:100%;
+$height:100%;
+$disinline:inline-block;
+$disblock:block;
+$poab:absolute;
+// 右侧固定定位购物车图标
+.shopping-cart {
+    position: fixed;
+    bottom: 160px;
+    left: 50%;
+    z-index: 999;
+    width: 70px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    opacity: .85;
+    margin-left: 550px;
+    .active {
+        background: #ff4965;
+        .iconfont {
+            color: #fff !important;
+        }
+    }
+    #sidebar-cart {
+        position: $potive;
+        width: 70px;
+        cursor: pointer;
+        padding: 8px 0;
+        text-align: center;
+        color: #ff647c;
+        border-top: 1px solid #e6e6e6;
+        height: 27px;
+        .cart-wrap {
+            position: $poab;
+            width: 60px;
+            height: 43px;
+        }
+        .car-bar {
+            width: 350px;
+            position: $poab;
+            right: 0;
+            bottom: -100px;
+            left: -350px;
+            display: none;
+            .car-bar-box {
+                background: transparent;
+                border: 1px solid rgb(155, 84, 130);
+                width: 350px;
+                text-align: left;
+                color: #000;
+                z-index: 30;
+                cursor: default;
+                position: $potive;
+                .car-bar-title {
+                    padding: 2px 15px;
+                    border-bottom: 1px solid #999;
+                    background: rgb(255, 249, 251);
+                    font-size: 13px;
+                    text-align: center;
+                    color: rgb(155, 84, 130);
+                    .iconfont {
+                        font-size: 18px;
+                    }
+                }
+                .car-list {
+                    background: rgb(255, 255, 255);
+                    overflow-y: hidden;
+                    li {
+                        font-size: 16px;
+                        color: rgb(153, 145, 140);
+                        padding: 80px 0;
+                        text-align: center;
+                        position: $potive;
+                        overflow: hidden;
+                        cursor: pointer;
+                        border-bottom: none;
+                        .select {
+                            width: 100%;
+                            display: block;
+                            transition: all 0.2s ease 0s;
+                            position: $poab;
+                            left: 0px;
+                            top: 80px;
+                            margin: 0px;
+                            padding: 0px;
+                        }
+                        .shoppshow {
+                            width: 100%;
+                            display: block;
+                            transition: all 0.2s ease 0s;
+                            position: $poab;
+                            left: -100%;
+                            top: 80px;
+                        }
+                    }
+                }
+                .subtotal {
+                    height: 47px;
+                    border-top: 1px solid rgb(227, 227, 227);
+                    background: rgb(255, 249, 251);
+                    .subtotal-n {
+                        font-size: 13px;
+                        color: rgb(102, 102, 102);
+                        padding: 10px 15px;
+                        position: $poab;
+                        span {
+                            color: rgb(229, 51, 99);
+                            font-size: 18px;
+                        }
+                    }
+                    .settlement {
+                        background: rgb(255, 84, 130);
+                        padding: 4px 12px;
+                        font-size: 13px;
+                        color: rgb(255, 255, 255);
+                        border-radius: 4px;
+                        border-width: 1px 1px 2px;
+                        border-style: solid;
+                        border-color: rgb(255, 60, 112) rgb(255, 60, 112) rgb(229, 51, 99);
+                        border-image: initial;
+                        float: right;
+                        margin-right: 15px;
+                        margin-top: 6px;
+                        height: 24px;
+                        width: auto;
+                        line-height: 24px;
+                        a {
+                            color: #fff;
+                            .iconfont {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 绿色小图
+        .zero {
+            position: $poab;
+            top: -2px;
+            right: 5px;
+            color: #7dca00;
+            em {
+                color: #fff;
+                display: $disinline;
+                font-size: 11px;
+                position: $poab;
+                right: 3px;
+                text-align: center;
+                top: 7px;
+                width: 14px;
+                line-height: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background: #7dca00;
+                font-style: normal;
+            }
+            .iconfont {
+                font-size: 22px;
+                display: none;
+            }
+        }
+    }
+    // 手机app
+    .phone-app {
+        position: $potive;
+        display: $disblock;
+        width: 70px;
+        cursor: pointer;
+        padding: 8px 0;
+        text-align: center;
+        color: #ff647c;
+        border-top: 1px solid #e6e6e6;
+        height: 27px;
+        .phone-x {
+            display: none;
+            position: $poab;
+            left: -185px;
+            top: -62px;
+            width: 160px;
+            padding: 10px;
+            border: 2px solid #ff4965;
+            background: #fff;
+            p {
+                text-align: center;
+                color: #333;
+                line-height: 16px;
+                font-size: 13px;
+                font-family: "微软雅黑";
+            }
+            img {
+                border: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+    // 客服在线
+    .customer {
+        display: $disblock;
+        width: 70px;
+        cursor: pointer;
+        padding: 8px 0;
+        text-align: center;
+        color: #ff647c;
+        position: $potive;
+        height: 27px;
+        border-top: 1px solid #e6e6e6;
+        .iconfont {
+            font-size: 18px;
+        }
+        span {
+            line-height: 26px;
+            display: none;
+        }
+    }
+    // 回到顶部
+    .back-top {
+        display: $disblock;
+        width: 70px;
+        cursor: pointer;
+        padding: 8px 0;
+        text-align: center;
+        color: #ff647c;
+        border-top: 1px solid #e6e6e6;
+        position: relative;
+        height: 27px;
+        span {
+            line-height: 26px;
+            display: none;
+        }
+    }
+}

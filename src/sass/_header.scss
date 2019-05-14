@@ -1,0 +1,171 @@
+@charset "utf-8";
+$width:100%;
+$disinline:inline-block;
+$disblock:block;
+$poab:absolute;
+$potive:relative;
+// 字体图标
+.iconfont {
+    font-family: iconfont;
+    font-size: 16px;
+    font-style: normal;
+}
+
+// 顶部警告标语
+.top_warning {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    width: $width;
+    color: #666;
+    background: #fff8ef;
+    .warning_notice {
+        margin: auto;
+        width: 1080px;
+    }
+    .warning_notice::before {
+        display: $disinline;
+        width: 12px;
+        height: 12px;
+        content: "";
+        background: url(../img/upload_8c570a8105fffad376a5a5ca12e5b5ea_12x12.png) center no-repeat;
+        margin: 13px 6px 0 0;
+    }
+}
+
+// 顶部导航
+.top_nav {
+    width: $width;
+    background: #f4f4f4;
+    border-bottom: 1px solid #e8e8e8;
+    height: 28px;
+    position: $potive;
+    z-index: 110;
+    .top_wrapper {
+        width: 1080px;
+        margin: 0 auto;
+        position: $potive;
+        ul {
+            position: $poab;
+            right: 0;
+            top: 0;
+            line-height: 28px;
+            padding: 0;
+            list-style: none;
+            // float: left;
+            li {
+                font-size: 12px;
+                display: $disinline;
+                color: #555;
+                vertical-align: top;
+                margin: 0 12px;
+                .t-pink {
+                    color: #ff5482;
+                }
+            }
+            // 导航中间的竖杠
+            .small {
+                margin: 7px 0;
+                height: 15px;
+                width: 1px;
+                background: #ddd;
+            }
+            .second {
+                margin: 0 6px;
+            }
+        }
+    }
+    a {
+        color: #555;
+    }
+    // 贝贝商家中心、帮助中心
+    .navigation {
+        position: $potive;
+        line-height: 1.4em;
+        margin-top: 2px;
+        margin-right: -8px;
+        display: $disinline;
+        .dropdown-default {
+            display: $disinline;
+            padding: 3px 8px 0 8px;
+            z-index: 110;
+            position: $potive;
+        }
+        .iconfont {
+            font-size: 12px;
+            vertical-align: 1px;
+        }
+        .pink {
+            color: #ff5482
+        }
+        // 关注
+        .nav_block {
+            width: 200px;
+            position: $poab;
+            top: 20px;
+            right: -75px;
+            font-size: 12px;
+            display: none;
+            background: #fff;
+            border: 1px solid #cececf;
+            .show-d {
+                float: left;
+                width: 135px;
+                text-align: center;
+                color: #666;
+                border-right: 1px dotted #cdcdce;
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+            .show-l {
+                display: $disinline;
+                width: 30px;
+                vertical-align: top;
+                dd {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 12px;
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+    .nav-list {
+        position: $potive;
+        font-size: 12px;
+        display: none;
+        border-bottom: none;
+        padding-bottom: 0;
+        top: 20px !important;
+        background: #fff;
+        border: 1px solid #cececf;
+        li {
+            line-height: 1.4em;
+            padding: 4px 0;
+        }
+    }
+    .navigation:hover {
+        .nav-list {
+            display: $disblock;
+            border-top: none;
+            a {
+                color: inherit;
+            }
+        }
+        span {
+            background: #fff;
+            border: 1px solid #cececf;
+            border-bottom: none;
+        }
+        .nav_block {
+            border: 1px solid #cecccf;
+            padding: 10px;
+            display: $disblock;
+        }
+    }
+}

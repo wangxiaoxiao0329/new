@@ -1,0 +1,292 @@
+@charset "utf-8";
+$width:1080px;
+$block:block;
+$tive:relative;
+$abso:absolute;
+@font-face {
+    font-family: "nc_iconfont";
+    src: url(../fonts/font_1465353706_4784257.woff) format('woff')
+}
+
+// 头部logo/图片
+.head {
+    width: $width;
+    margin: 0 auto;
+    padding-top: 45px;
+    overflow: hidden;
+    .head-logo {
+        float: left;
+        a {
+            display: $block;
+            background: url(https://h0.hucdn.com/open201912/113f25eac3906f0d_114x60.jpg) no-repeat 0 0 #fff;
+            height: 60px;
+            position: $tive;
+            width: 114px;
+        }
+    }
+    .head-pic {
+        a {
+            float: right;
+            display: $block;
+            background: url(../img/upload_d96e41a66c898b1e6afef9efbfbdc1be_361x54.png) no-repeat 0 3px #fff;
+            height: 50px;
+            position: $tive;
+            width: 360px;
+        }
+    }
+}
+
+//  主体登录注册/左侧大图
+.login-main {
+    overflow: hidden;
+    padding: 110px 0;
+    width: $width;
+    margin: 0 auto;
+    // 右侧大图
+    .login-picture {
+        width: 500px;
+        height: 354px;
+        background: url(../img/0972a068e6793844_500x354.png) no-repeat;
+        position: $tive;
+        left: 50px;
+        display: inline-block;
+    }
+    // 右侧登录注册
+    .login-sign {
+        color: #666;
+        width: 400px;
+        border: 1px solid #ececec;
+        border-top: 2px solid #ff4965;
+        float: right;
+        position: $tive;
+        form {
+            padding: 50px 35px;
+            // 共用的样式
+            .lo-label {
+                display: $block;
+                border: 1px solid #e6e6e6;
+                border-radius: 2px;
+                padding-left: 30px;
+                position: $tive;
+                .fixedpic {
+                    position: $abso;
+                    left: 8px;
+                    top: 8px;
+                    border-right: 1px solid #e6e6e6;
+                    padding-right: 7px;
+                    background-image: url(https://b0.hucdn.com/party/default/upload_c8f6a2dfe4ca17b3941740e88373a88e_14x93.jpg);
+                    background-repeat: no-repeat;
+                    width: 14px;
+                    height: 14px;
+                    line-height: 30px;
+                    color: #fff;
+                    text-align: center;
+                }
+                .input {
+                    height: 30px;
+                    font-size: 12px;
+                    width: 278px;
+                    color: #666;
+                    line-height: 30px;
+                    border: 0;
+                    padding: 0 10px;
+                    background: 0 0;
+                    position: $tive;
+                }
+            }
+            //  新用户注册
+            .lo-title {
+                font-size: 14px;
+                color: #000;
+                font-weight: 700;
+                margin-bottom: 30px;
+                .lo-not {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #666;
+                    float: right;
+                    .lo-register {
+                        color: #ff4965;
+                    }
+                }
+            }
+            // 手机号码、邮箱
+            .lo-email {
+                margin-top: 15px;
+                .lo-label {
+                    height: 32px;
+                    .em-pic {
+                        background-position: 0 0;
+                    }
+                }
+            }
+            // 滑动验证
+            .lo-slide {
+                margin-top: 15px;
+                .s-wrapper {
+                    margin-top: 15px;
+                    .nc-wrapper {
+                        width: 330px;
+                        .nc-sbox {
+                            width: auto;
+                            height: 34px;
+                            background: #e8e8e8;
+                            position: $tive;
+                            margin: 0;
+                            padding: 0;
+                            .nc_iconfont {
+                                font-family: "nc_iconfont";
+                                color: #ff3f08;
+                                font-size: 16px;
+                                font-style: normal;
+                            }
+                            .btn_slide {
+                                color: #737383;
+                                background-image: none;
+                            }
+                            span {
+                                text-align: center;
+                                width: 40px;
+                                height: 32px;
+                                line-height: 32px;
+                                border: 1px solid #ccc;
+                                position: $abso;
+                                left: 0;
+                                cursor: move;
+                                background: #fff;
+                                z-index: 100;
+                            }
+                            .nc-text {
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                position: $abso;
+                                background: transparent;
+                                color: #9c9c9c;
+                                line-height: 34px;
+                                cursor: pointer;
+                                .nc-text-span {
+                                    display: inline-block;
+                                    width: 100%;
+                                    border: none;
+                                    position: static;
+                                    background: none;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // 短信验证
+            .lo-short {
+                margin-top: 15px;
+                .clearfix {
+                    .lo-label {
+                        width: 195px;
+                        float: left;
+                        .hs-pic {
+                            background-position: 0 -33px;
+                        }
+                        .em-input {
+                            width: 175px;
+                        }
+                    }
+                    .btn-bbnormal {
+                        padding: 0 13px;
+                        height: 30px;
+                        line-height: 30px;
+                        color: #ff4965;
+                        background: #fff;
+                        border: 1px solid #ff4965;
+                        border-radius: 3px;
+                        display: inline-block;
+                        font-size: 10px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            // 密码
+            .lo-password {
+                margin-top: 15px;
+                .lo-label {
+                    height: 32px;
+                    .pass-pic {
+                        background-position: 0 -47px;
+                    }
+                    .passlock {
+                        cursor: pointer;
+                        top: 10px;
+                        right: 8px;
+                        background-position: 0 -66px;
+                        position: $abso;
+                        background-image: url(https://b0.hucdn.com/party/default/upload_c8f6a2dfe4ca17b3941740e88373a88e_14x93.jpg);
+                        background-repeat: no-repeat;
+                        width: 14px;
+                        height: 14px;
+                        line-height: 30px;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+            }
+            //  注册按钮
+            .lo-btn {
+                margin-top: 15px;
+                input {
+                    display: $block;
+                    border: 0;
+                    width: 330px !important;
+                    color: #fff;
+                    background: #ff4965;
+                    height: 32px;
+                    border-radius: 3px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+            //  注册下的文本
+            .lo-text {
+                margin-top: 15px;
+                font-size: 10px;
+                line-height: 20px;
+                a {
+                    color: #ff4965;
+                }
+            }
+            // 快捷登录
+            .lo-spic {
+                overflow: hidden;
+                height: 24px;
+                line-height: 24px;
+                margin-top: 15px;
+                span {
+                    float: left;
+                    font-size: 10px;
+                }
+                .bg-img {
+                    background-image: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png);
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 24px;
+                    margin: 0 4px;
+                }
+                .lo-spic-qq {
+                    display: inline-block;
+                    background-position: 1px 0;
+                }
+                .lo-spic-qq:hover {
+                    background-position: -28px 0;
+                }
+                .lo-spic-wx {
+                    display: inline-block;
+                    background-position: -119px 0;
+                    width: 26px;
+                }
+                .lo-spic-wx:hover {
+                    background-position: -149px 0;
+                }
+            }
+        }
+    }
+}

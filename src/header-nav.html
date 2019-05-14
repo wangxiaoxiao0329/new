@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body>
+    <!-- 头部logo+购物车+导航+搜索+在售分类 -->
+    <div id="head">
+        <div class="head-wrapper">
+            <div class="logo">
+                <img src="https://h0.hucdn.com/open201912/113f25eac3906f0d_114x60.jpg">
+                <a class="logo-a" href="#" title="返回首页"></a>
+
+                <div class="logo-slogan">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <!-- 购物车 -->
+                <div class="nav-cart" c-rid="01048">
+                    <a class="top-cart" href="#" c-bname="购物车菜单" clog="" c-emit="click" c-et="event" c-etl="" clog-get="true">
+                        <div class="top-cart-icon">
+                            <i class="iconfont">󰅈</i>
+                        </div>
+                        <span>我的购物车 <i class="iconfont">󰅰</i></span>
+                    </a>
+                    <div class="nav-cart-detail hidden view-TopMenuCart" style="">
+                        <div wg-view="main" widget-id="widgetCartBox4172645891557034530338" widget-name="widgetCartBox" style="background: transparent; border: 1px solid rgb(255, 84, 130); width: 340px; text-align: left; color: rgb(0, 0, 0); z-index: 29; cursor: default; position: relative;">
+                            <div wg-view="title" op-value="title"></div>
+                            <ul wg-view="list" op-each="cartInfo" op-each-item="ListItem" style="background: rgb(255, 255, 255); overflow-y: hidden;">
+                                <li class="empty-cart" style="font-size: 16px; color: rgb(153, 145, 140); padding: 80px 0px; text-align: center; position: relative; overflow: hidden; list-style: none; cursor: pointer; border-bottom: none;">
+                                    <span class="note" style="width: 100%; display: block; transition: all 0.2s ease 0s; position: absolute; left: 0px; top: 80px; margin: 0px; padding: 0px;">赶快去挑选商品吧！</span>
+                                    <span class="shopping" style="width: 100%; display: block; transition: all 0.2s ease 0s; position: absolute; left: -100%; top: 80px;"><i class="iconfont">󰅸</i> 去专场逛逛</span>
+                                </li>
+                            </ul>
+                            <div wg-view="footer" style="height: 47px; border-top: 1px solid rgb(227, 227, 227); background: rgb(255, 249, 251);">
+                                <div wg-view="footerTotal" style="font-size: 13px; color: rgb(102, 102, 102); padding: 10px 15px; position: absolute;">小计：
+                                    <span wg-view="footerTotalNum" op-value="totalPrice" style="color: rgb(229, 51, 99); font-size: 18px;">¥0.00</span>
+                                </div>
+                                <div wg-view="footerBtnBar">
+                                    <a href="cart.html" wg-view="footerSettleBtn" op-value="settleBtnText,settleBtnLink" op-attr="*,href" style="background: rgb(255, 84, 130); padding: 4px 12px; font-size: 13px; color: rgb(255, 255, 255); border-radius: 4px; border-width: 1px 1px 2px; border-style: solid; border-color: rgb(255, 60, 112) rgb(255, 60, 112) rgb(229, 51, 99); border-image: initial; float: right; margin-right: 15px; margin-top: 6px; height: 24px; width: auto; line-height: 24px;"><i class="iconfont">󰅹</i>去购物车结算</a>
+                                </div>
+                            </div>
+                            <div wg-view="footerBg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主体导航 -->
+        <div id="main-nav">
+            <div class="wrapper">
+                <ul class="m-tab">
+                    <li class="active"><a href="#" class="item">首页</a></li>
+                    <li><a href="#" class="item">贝贝APP</a></li>
+                    <li><a href="#" class="item">贝店</a></li>
+                    <li><a href="#" class="item">友团</a></li>
+                    <li><a href="#" class="item">贝贷</a></li>
+                    <li><a href="#" class="item nav-i">商家入驻<i></i></a></li>
+                </ul>
+                <!-- 在售分类/搜索 -->
+                <div class="onsale">
+                    <div class="classify">
+                        <span class="btn-cat">在售分类<i class="iconfont"></i></span>
+                        <!-- 分类区块 start -->
+                        <div class="btn-list">
+                            <ul class="list-box">
+                                <li class="item current">热销分类</li>
+                                <li class="item">儿童服饰</li>
+                                <li class="item">婴儿装</li>
+                                <li class="item">婴童鞋</li>
+                                <li class="item">奶粉辅食</li>
+                                <li class="item">纸尿裤</li>
+                                <li class="item">哺育喂养</li>
+                                <li class="item">洗护清洁</li>
+                                <li class="item">睡眠出行</li>
+                                <li class="item">玩具文体</li>
+                                <li class="item">孕妈专区</li>
+                                <li class="item">流行服饰</li>
+                                <li class="item">鞋包配饰</li>
+                                <li class="item">居家百货</li>
+                                <li class="item">美妆个护</li>
+                            </ul>
+                            <div class="bn-con show">
+                                <ul class="cont">
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1607/08/47777251304120_150x150.png!60x60.jpg"><label>纸尿裤</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1512/08/65064681196826_120x120.jpg!60x60.jpg"><label>奶瓶</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1606/03/52214243214120_150x150.jpg!60x60.jpg"><label>益智早教</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1607/08/47799721994120_150x150.jpg!60x60.jpg"><label>奶粉</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1610/27/61534086624120_150x150.png!60x60.jpg"><label>套装</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1610/27/61539581244120_150x150.png!60x60.jpg"><label>哈衣爬服</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1610/27/61544811414120_150x150.jpg!60x60.jpg"><label>爆款童鞋</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1609/30/04541470574120_150x150.png!60x60.jpg"><label>鞋包配饰</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1610/13/55301456264120_150x150.png!60x60.jpg"><label>春装上新</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1601/14/35669652256826_120x120.jpg!60x60.jpg"><label>床品</label></a>
+                                    </li>
+                                    <li class="cont-a-img">
+                                        <a href="#"><img src="http://b1.hucdn.com/upload/category/1512/06/85158569796826_120x120.jpg!60x60.jpg"><label>护肤套装</label></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- 分类区块 end -->
+                    </div>
+                    <!-- 搜索框 -->
+                    <div class="search-box">
+
+                        <input type="text" placeholder="搜索商品或品牌" value="" maxlength="20">
+
+                    </div>
+                    <div class="search-icon">
+                        <div class="se-icon">
+                            <i class="iconfont">󰄬</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

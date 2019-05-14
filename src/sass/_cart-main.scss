@@ -1,0 +1,526 @@
+@charset "utf-8";
+$potive:relative;
+$width:100%;
+$height:100%;
+$disinline:inline-block;
+$disblock:block;
+$poab:absolute;
+@font-face {
+    font-family: "iconfont";
+    src: url(fonts/font_tr83tta2jkc8r529.woff) format('woff')
+}
+
+.iconfont {
+    font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+}
+
+// 头部
+#head {
+    position: $potive;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .06);
+    box-shadow: 1px 0 3px #777;
+    .head-wrapper {
+        width: 1080px;
+        margin: 0 auto;
+        .logo {
+            height: 90px;
+            position: $potive;
+            text-align: left;
+            img {
+                margin-top: 15px;
+            }
+            .logo-a {
+                overflow: hidden;
+                position: $poab;
+                height: 50px;
+                left: 0;
+                top: 10px;
+                width: 250px;
+                display: $disblock;
+            }
+            .logo-slogan {
+                left: 525px;
+                background: url(../img/upload_ae75f583dcb3536e115449a11bde5434_390x40.png) no-repeat;
+                width: 390px;
+                height: 40px;
+                position: $poab;
+                top: 25px;
+                a {
+                    display: $disblock;
+                    width: $width;
+                    height: $height;
+                }
+            }
+            // 购物车
+            .nav-cart {
+                .top-cart {
+                    left: 947px;
+                }
+                .top-cart {
+                    height: 34px;
+                    top: 28px;
+                    left: 949px;
+                    position: $poab;
+                    display: block;
+                    background: #ff647c;
+                    border-radius: 10px;
+                    span {
+                        color: #fff;
+                        padding: 0 12px 0 24px;
+                        font-size: 15px;
+                        line-height: 34px;
+                        .top-cart span .iconfont {
+                            font-size: 13px;
+                            vertical-align: 1px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+                .top-cart-icon {
+                    position: $poab;
+                    left: -18px;
+                    border: 2px solid #fff;
+                    height: 32px;
+                    width: 32px;
+                    line-height: 30px;
+                    text-align: center;
+                    border-radius: 18px;
+                    background: #444;
+                    color: #fff;
+                    top: -1px;
+                }
+                .nav-cart-detail {
+                    right: 3px;
+                    background: #fff;
+                    border-top: none;
+                    padding: 0;
+                    position: $poab;
+                    top: 62px;
+                    // width: 605px;
+                }
+                .hidden {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// 主体部分
+#cart-content {
+    background: #f4f4f4;
+    ;
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        position: $potive;
+        .box-shadow {
+            box-shadow: 0 1px 2px #d1d1d1;
+        }
+        .white-bg {
+            background: #fefefe;
+            margin-bottom: 10px;
+            overflow: hidden;
+            // 我的购物车
+            .cart-process {
+                position: $potive;
+                height: 70px;
+                background: #fafafa;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #eee;
+                margin: 0 0 10px 0;
+                h1 {
+                    margin: 0 0 0 30px;
+                    line-height: 70px;
+                    color: #a7a7a7;
+                    text-shadow: 0 -1px 1 #fff;
+                    font-size: 22px;
+                }
+                i {
+                    position: $poab;
+                    right: 30px;
+                    top: 0;
+                    background: url(http://b0.hucdn.com/img/trade/cart_merge.png) no-repeat 500px 500px;
+                    width: 340px;
+                    height: 70px;
+                    display: $disinline;
+                    background-position: 0 -88px;
+                }
+            }
+            // 列表头部
+            .cart-wrap {
+                padding: 20px 20px 20px;
+                position: $potive;
+                .w {
+                    margin: 0;
+                    #bb-cart {
+                        width: 100%;
+                        .cartmain {
+                            .cart-thead {
+                                background: #fafafa;
+                                height: 31px;
+                                line-height: 31px;
+                                text-align: center;
+                                box-sizing: border-box;
+                                font-weight: 700;
+                                .cart-col {
+                                    float: left;
+                                    padding: 0 12px;
+                                    font-size: 12px;
+                                    vertical-align: bottom;
+                                }
+                                .t-checkbox {
+                                    height: 18px;
+                                    line-height: 18px;
+                                    padding-top: 7px;
+                                    width: 60px;
+                                    padding-left: 11px;
+                                    .cart-checkbox {
+                                        input {
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                                .t-goods {
+                                    width: 160px;
+                                }
+                                .t-props {
+                                    width: 140px;
+                                    height: 32px;
+                                    padding: 0 20px;
+                                    text-align: right;
+                                }
+                                .t-prices {
+                                    width: 170px;
+                                    padding-right: 40px;
+                                    text-align: right;
+                                    height: 32px;
+                                }
+                                .t-quantity {
+                                    text-align: center;
+                                    width: 240px;
+                                }
+                                .t-sum {
+                                    width: 100px;
+                                    padding-right: 40px;
+                                }
+                            }
+                            #cart-list {
+                                .cart-item-list {
+                                    margin-bottom: 20px;
+                                    .cart-tbody {
+                                        // .shop {
+                                        //     height: 30px;
+                                        //     line-height: 30px;
+                                        //     padding-left: 11px;
+                                        //     font-weight: 700;
+                                        //     .cart-checkbox {
+                                        //         float: left;
+                                        //     }
+                                        //     .shop-info {
+                                        //         float: left;
+                                        //         width: 538px;
+                                        //     }
+                                        // }
+                                        .item-list {
+                                            border-style: solid;
+                                            border-width: 2px 1px 1px;
+                                            border-color: #aaa #f1f1f1 #f1f1f1;
+                                            background: #fff;
+                                            .item-head {
+                                                height: 26px;
+                                                padding: 5px 10px;
+                                                overflow: hidden;
+                                                font-size: 12px;
+                                                .header-left {
+                                                    width: 750px;
+                                                    line-height: 26px;
+                                                    float: left;
+                                                    .header-left-p1 {
+                                                        color: #666;
+                                                        span {
+                                                            margin: 0 10px 0 5px;
+                                                            padding: 1px 10px;
+                                                            border: 1px solid #f48719;
+                                                            background: #f48719;
+                                                            color: white;
+                                                            position: $potive;
+                                                            b {
+                                                                position: $poab;
+                                                                display: $disblock;
+                                                                width: 5px;
+                                                                height: 6px;
+                                                                left: -1px;
+                                                                bottom: -5px;
+                                                            }
+                                                        }
+                                                    }
+                                                    .header-left-p2 {
+                                                        margin-left: 20px;
+                                                        padding: 0 5px;
+                                                        border-radius: 2px;
+                                                        background: #e74649;
+                                                        color: white;
+                                                        display: inline-block;
+                                                        height: 19px;
+                                                        line-height: 19px;
+                                                    }
+                                                }
+                                                .header-price {
+                                                    width: 100px;
+                                                    float: left;
+                                                    text-align: right;
+                                                }
+                                            }
+                                            .goods-item {
+                                                padding: 0 10px 0 40px;
+                                                position: $potive;
+                                                font-size: 12px;
+                                                display: none;
+                                                .goods-info {
+                                                    border-top: 1px solid #f1f1f1;
+                                                    overflow: hidden;
+                                                    .cell {
+                                                        float: left;
+                                                    }
+                                                    .b-checkbox {
+                                                        position: $poab;
+                                                        left: 10px;
+                                                        width: 30px;
+                                                        height: 20px;
+                                                        padding: 15px 0 10px 0;
+                                                        .cart-checkbox {
+                                                            input {
+                                                                position: $poab;
+                                                                z-index: 2;
+                                                            }
+                                                            .line-circle {
+                                                                position: $poab;
+                                                                left: 2px;
+                                                                top: -5px;
+                                                                display: block;
+                                                                width: 7px;
+                                                                height: 29px;
+                                                            }
+                                                        }
+                                                    }
+                                                    .b-goods {
+                                                        width: 300px;
+                                                        padding: 15px 0 10px 0;
+                                                        .goods-name {
+                                                            .goods-pic {
+                                                                width: 82px;
+                                                                height: 82px;
+                                                                margin-right: 10px;
+                                                                border: 1px solid #eee;
+                                                                float: left;
+                                                                img {
+                                                                    width: 80px;
+                                                                    height: 80px;
+                                                                }
+                                                            }
+                                                            .goods-msg {
+                                                                .goods-d-info {
+                                                                    // height: 40px;
+                                                                    line-height: 20px;
+                                                                    overflow: hidden;
+                                                                    font-size: 12px;
+                                                                    a {
+                                                                        color: #666;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .b-props {
+                                                        height: 80px;
+                                                        padding: 15px 10px 0 10px;
+                                                        overflow: hidden;
+                                                        .prop-text {
+                                                            width: 160px;
+                                                            color: #666;
+                                                        }
+                                                    }
+                                                    .b-price {
+                                                        width: 120px;
+                                                        padding: 15px 40px 10px 15px;
+                                                        overflow: hidden;
+                                                        text-align: center;
+                                                        .sales-promotion {
+                                                            display: $disblock;
+                                                            width: 53px;
+                                                            border: 1px solid #f9d2d3;
+                                                            color: #e4393c;
+                                                            height: 18px;
+                                                            line-height: 17px;
+                                                            padding: 0 15px 0 8px;
+                                                            cursor: pointer;
+                                                            background: #fff;
+                                                            text-decoration: none;
+                                                            float: right;
+                                                            overflow: hidden;
+                                                            position: $potive;
+                                                            margin-top: 5px;
+                                                        }
+                                                    }
+                                                    .b-quantity {
+                                                        width: 80px;
+                                                        padding: 15px 0 10px;
+                                                        margin-left: 80px;
+                                                        margin-right: 80px;
+                                                        .quantity-form {
+                                                            position: $potive;
+                                                            overflow: hidden;
+                                                            height: 24px;
+                                                            border: 1px solid #cacbcb;
+                                                            box-sizing: border-box;
+                                                            a {
+                                                                display: $disinline;
+                                                                height: 20px;
+                                                                line-height: 18px;
+                                                                padding: 1px 0;
+                                                                width: 18px;
+                                                                text-align: center;
+                                                                color: #666;
+                                                                margin: 0;
+                                                                background: #fff;
+                                                                float: left;
+                                                            }
+                                                            .quantity-down {
+                                                                border-right: 1px solid #cacbcb;
+                                                            }
+                                                            .quantity-add {
+                                                                border-left: 1px solid #cacbcb;
+                                                            }
+                                                            input {
+                                                                width: 40px;
+                                                                height: 20px;
+                                                                float: left;
+                                                                text-align: center;
+                                                                background: white;
+                                                                border: none;
+                                                            }
+                                                        }
+                                                        .quantity-text {
+                                                            text-align: center;
+                                                            height: 20px;
+                                                            line-height: 20px;
+                                                        }
+                                                    }
+                                                    .b-sum {
+                                                        width: 100px;
+                                                        height: 20px;
+                                                        padding: 15px 40px 15px 0;
+                                                        text-align: right;
+                                                        strong {
+                                                            color: #333;
+                                                            font-weight: 700;
+                                                            font-size: 14px;
+                                                        }
+                                                    }
+                                                    .b-action {
+                                                        padding: 15px 0 10px 0;
+                                                        a {
+                                                            display: $disblock;
+                                                            width: 75px;
+                                                            height: 20px;
+                                                            color: #333;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .goods-item-sele {
+                                                background: #fafafa;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #cart-floatbar {
+                        width: 988px;
+                        height: 50px;
+                        border: 1px solid #f0f0f0;
+                        background: #fff;
+                        position: $potive;
+                        .select-all {
+                            float: left;
+                            height: 18px;
+                            line-height: 18px;
+                            padding: 16px 0 16px 9px;
+                        }
+                        .operation {
+                            float: left;
+                            height: 50px;
+                            width: 310px;
+                            line-height: 50px;
+                            a {
+                                margin-left: 20px;
+                                display: inline-block;
+                                height: 50px;
+                                color: #333;
+                                font-size: 12px;
+                            }
+                        }
+                        .toolbar-right {
+                            overflow: hidden;
+                            font-size: 12px;
+                            .btn-area {
+                                float: right;
+                                a {
+                                    display: block;
+                                    width: 96px;
+                                    height: 52px;
+                                }
+                            }
+                            .price-sum {
+                                float: right;
+                                height: 43px;
+                                line-height: 20px;
+                                margin: 7px 20px 0 10px;
+                                color: #666;
+                                width: 220px;
+                                span {
+                                    display: $disblock;
+                                    width: 110px;
+                                    height: 20px;
+                                    float: left;
+                                    text-align: left;
+                                }
+                                .txt {
+                                    text-align: right;
+                                }
+                                .totalprice {
+                                    font-size: 18px;
+                                    color: #e4393c;
+                                    font-weight: 700;
+                                }
+                            }
+                            .amount-sum {
+                                float: right;
+                                color: #999;
+                                height: 44px;
+                                line-height: 20px;
+                                margin: 7px 0 0;
+                                cursor: pointer;
+                                em {
+                                    color: #e4393c;
+                                    font-family: verdana;
+                                    font-weight: 700;
+                                    margin: 0 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mt-20 {
+        padding-top: 20px;
+    }
+}
